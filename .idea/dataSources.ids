@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="SQLite" version="3.7.15" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="219e9a38-ea3a-494e-af9e-9ea2a92904ef">
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <synchronize>true</synchronize>
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/development.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$PROJECT_DIR$/../../../java_libs/sqlite-jdbc-3.7.15-M1.jar</url>
+      </library>
+    </libraries>
+    <schema name="" catalog=""/>
+    <table name="auth_group" schema="" catalog="" type="TABLE"/>
+    <table name="auth_group_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="auth_permission" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_groups" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_user_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="blog_board" schema="" catalog="" type="TABLE">
+      <column name="description" sqlType="TEXT" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR(100)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <primary-key columns="id"/>
+    </table>
+    <table name="django_admin_log" schema="" catalog="" type="TABLE"/>
+    <table name="django_content_type" schema="" catalog="" type="TABLE"/>
+    <table name="django_session" schema="" catalog="" type="TABLE"/>
+    <table name="django_site" schema="" catalog="" type="TABLE"/>
+    <table name="south_migrationhistory" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" length="2000000000" precision="10" nullable="false" jdbcType="4"/>
+      <column name="app_name" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="migration" sqlType="VARCHAR(255)" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <column name="applied" sqlType="DATETIME" length="2000000000" precision="10" nullable="false" jdbcType="12"/>
+      <primary-key columns="id"/>
+    </table>
+  </data-source>
+  <data-source source="LOCAL" name="Django default" product="SQLite" version="3.7.15" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="3cb4ad65-80d0-4a99-ba6c-88aad8f704d8">
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:D:\dev\jetbrains_works\PycharmProject\django_blog\development.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$PROJECT_DIR$/../../../java_libs/sqlite-jdbc-3.7.15-M1.jar</url>
+      </library>
+    </libraries>
+    <schema name="" catalog=""/>
+    <table name="auth_group" schema="" catalog="" type="TABLE"/>
+    <table name="auth_group_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="auth_permission" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_groups" schema="" catalog="" type="TABLE"/>
+    <table name="auth_user_user_permissions" schema="" catalog="" type="TABLE"/>
+    <table name="blog_board" schema="" catalog="" type="TABLE"/>
+    <table name="django_admin_log" schema="" catalog="" type="TABLE"/>
+    <table name="django_content_type" schema="" catalog="" type="TABLE"/>
+    <table name="django_session" schema="" catalog="" type="TABLE"/>
+    <table name="django_site" schema="" catalog="" type="TABLE"/>
+    <table name="south_migrationhistory" schema="" catalog="" type="TABLE"/>
+  </data-source>
+</component>

@@ -1,4 +1,14 @@
+# -*- coding: utf-8 -*-
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# 임대림 추가
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+# print(" BASE_DIR : #{0}".format(BASE_DIR))
+
 # Django settings for django_blog project.
+
+#
+import os.path
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -63,7 +73,10 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+# STATIC_ROOT = os.path.join(BASE_DIR, "static").replace('\\','/')
+# STATIC_ROOT = "D:/dev/jetbrains_works/PycharmProject/django_blog/"
+STATIC_ROOT = BASE_DIR
+# print(" STATIC_ROOT : {0}".format(STATIC_ROOT))
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -74,6 +87,9 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    # os.path.join(os.path.dirname(__file__), 'static'),
+    os.path.join(BASE_DIR, "static"),
+    # STATIC_ROOT,
 )
 
 # List of finder classes that know how to find static files in
@@ -124,6 +140,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'blog',
+    'south',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

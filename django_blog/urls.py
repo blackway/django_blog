@@ -1,4 +1,7 @@
 from django.conf.urls import patterns, include, url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,5 +17,15 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    # url(r'^$', contacts.views.ListContactView.as_view(),
+    #     name='contacts-list',),
+    # url(r'^new$', contacts.views.CreateContactView.as_view(),
+    #     name='contacts-new',),
+        url(r'^$', 'blog.views.main_page'),
+        url(r'^$', 'blog.views.create', name='blog-create'),
+    # url(r'^new$', blog.views.CreateContactView.as_view(),
+    #     name='contacts-new',),
 )
 
+urlpatterns += staticfiles_urlpatterns()

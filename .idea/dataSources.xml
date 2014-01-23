@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1228115797">
+    <data-source source="LOCAL" name="Data Source" uuid="219e9a38-ea3a-494e-af9e-9ea2a92904ef">
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/development.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../../../java_libs/sqlite-jdbc-3.7.15-M1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="3cb4ad65-80d0-4a99-ba6c-88aad8f704d8">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\dev\jetbrains_works\PycharmProject\django_blog\development.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../../../java_libs/sqlite-jdbc-3.7.15-M1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
