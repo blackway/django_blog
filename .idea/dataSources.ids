@@ -52,10 +52,12 @@
     <table name="auth_user_groups" schema="" catalog="" type="TABLE"/>
     <table name="auth_user_user_permissions" schema="" catalog="" type="TABLE"/>
     <table name="blog_board" schema="" catalog="" type="TABLE"/>
+    <table name="blog_comment" schema="" catalog="" type="TABLE"/>
     <table name="django_admin_log" schema="" catalog="" type="TABLE"/>
     <table name="django_content_type" schema="" catalog="" type="TABLE"/>
     <table name="django_session" schema="" catalog="" type="TABLE"/>
     <table name="django_site" schema="" catalog="" type="TABLE"/>
+    <table name="picture_picture" schema="" catalog="" type="TABLE"/>
     <table name="south_migrationhistory" schema="" catalog="" type="TABLE"/>
   </data-source>
 </component>

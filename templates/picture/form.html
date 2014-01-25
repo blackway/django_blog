@@ -1,0 +1,16 @@
+               <form id="form_id" action="/picture/create" method="post" enctype='multipart/form-data'>{% csrf_token %}
+                  <fieldset>
+                    <legend>사진</legend>
+                      {{ form.as_p }}
+                        <input type="submit" value="등록" class="btn btn-primary" />
+                        <input type="submit" value="삭제" onclick="javascript:FormSubmitDelete();" class="btn btn-danger" />
+{#                        <input type="submit" value="삭제" onclick="$(location).attr('href','/picture/{{ id }}/delete');" class="btn btn-danger" />#}
+                  </fieldset>
+                </form>
+               <script language="javascript">
+                   function FormSubmitDelete(){
+                       $("form").attr('method','get');
+                       $("form").attr('action','/picture/{{ id }}/delete').submit();
+                   }
+
+               </script>

@@ -7,7 +7,7 @@ class Board(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=2000)
     created_at = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User)
+    # user = models.ForeignKey(User)
 
 class Comment(models.Model):
     title = models.CharField(max_length=200)

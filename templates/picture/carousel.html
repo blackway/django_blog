@@ -1,0 +1,24 @@
+<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        {% for carousel in carousels %}
+            {% if forloop.counter == 1 %}
+            <div class="item active">
+            {% else %}
+            <div class="item">
+            {% endif %}
+                <img src="/{{ carousel.file }}" alt="">
+                <div class="carousel-caption">
+                  <h4>첫번째 미리보기 제목</h4>
+                  <p>고블랭은 유럽 석조건축과 분리시켜 생각할 수 없다. 차갑고 딱딱한 석벽에 걸은 태피스트리로 발달된 것으로서 중세의 성곽이나 사원 내부에서는 없어서는 안될 물건이었을 것이다.</p>
+                </div>
+            </div>
+          {% endfor %}
+    </div>
+    <a class="left carousel-control en-font-family" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control en-font-family" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
